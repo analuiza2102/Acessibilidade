@@ -1,0 +1,74 @@
+
+.secaoSobre {
+  color: #000000;
+  background: #56CFF2;
+  transform: rotate(-0.12deg);
+}
+
+.secaoSobre-texto {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.equipe-esp{
+  font-weight: bold;
+  color: black;
+}
+
+.desenvol-app{
+  font-weight: bold;
+  color: black;
+}
+
+.secaoSobre-plataformas {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.secaoSobre-imgDestaque {
+  display: none;
+}
+
+
+@media (min-width: 830px) {
+
+  .secaoSobre {
+    text-align: left;
+  }
+
+  .secaoSobre-titulo {
+    text-align: left;
+  }
+
+  .secaoSobre-imgDestaque {
+    display: block;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 2em;
+  }
+
+  .secaoSobre-plataformas {
+    display: block;
+    padding-top: 1.5em;
+    position: relative;
+  }
+
+  .secaoSobre-plataformas:before {
+    content: '';
+    height: 1px;
+    width: 45%;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 4px;
+  }
+
+  .secaoSobre-plataformas li {
+    display: inline-block;
+    margin-right: 3em;
+    margin: 1em 3em 0 0
+  }
+
+}
